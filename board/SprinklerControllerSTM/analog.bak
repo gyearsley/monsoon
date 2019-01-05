@@ -1,0 +1,247 @@
+EESchema Schematic File Version 4
+LIBS:SprinklerControllerSTM-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 49 50
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3300 3000 2750 3000
+Wire Wire Line
+	3300 3100 2750 3100
+Text HLabel 2750 3100 0    50   Input ~ 0
+CS0
+Text HLabel 2750 3000 0    50   Input ~ 0
+SI
+Text HLabel 2750 2900 0    50   Input ~ 0
+SCK
+$Comp
+L power:GND #PWR0118
+U 1 1 5C087259
+P 3700 3550
+F 0 "#PWR0118" H 3700 3300 50  0001 C CNN
+F 1 "GND" H 3705 3377 50  0000 C CNN
+F 2 "" H 3700 3550 50  0001 C CNN
+F 3 "" H 3700 3550 50  0001 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3350 3700 3450
+Wire Wire Line
+	3700 2350 3700 2200
+Wire Wire Line
+	4100 2650 4350 2650
+$Comp
+L MicroChip:mcp6s93 U21
+U 1 1 5C08754B
+P 3650 2750
+F 0 "U21" H 4141 2696 50  0000 L CNN
+F 1 "mcp6s93" H 4141 2605 50  0000 L CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 3650 2750 50  0001 C CNN
+F 3 "" H 3650 2750 50  0001 C CNN
+	1    3650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MicroChip:MCP6G03 U30
+U 1 1 5C0886DC
+P 3650 4600
+F 0 "U30" H 4041 4546 50  0000 L CNN
+F 1 "MCP6G03" H 4041 4455 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3650 4600 50  0001 C CNN
+F 3 "" H 3650 4600 50  0001 C CNN
+	1    3650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5C08890C
+P 3650 5350
+F 0 "#PWR0121" H 3650 5100 50  0001 C CNN
+F 1 "GND" H 3655 5177 50  0000 C CNN
+F 2 "" H 3650 5350 50  0001 C CNN
+F 3 "" H 3650 5350 50  0001 C CNN
+	1    3650 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5150 3650 5250
+Wire Wire Line
+	3400 4550 3200 4550
+Wire Wire Line
+	3400 4850 3200 4850
+Wire Wire Line
+	3400 4950 3200 4950
+Text HLabel 3200 4950 0    50   Input ~ 0
+CS1
+Text HLabel 3200 4850 0    50   Input ~ 0
+GSEL
+Text HLabel 3200 4550 0    50   Input ~ 0
+VIN1
+Wire Wire Line
+	4000 4650 4300 4650
+Text HLabel 4450 4650 2    50   Output ~ 0
+VOUT1
+Text HLabel 4600 2650 2    50   Output ~ 0
+VOUT0
+Text HLabel 2750 2750 0    50   Input ~ 0
+VREF
+Text HLabel 2750 2550 0    50   Input ~ 0
+VIN0_0
+Text HLabel 2750 2600 0    50   Input ~ 0
+VIN0_1
+Wire Wire Line
+	3300 3200 2750 3200
+Text HLabel 2750 3200 0    50   Output ~ 0
+SO
+$Comp
+L Device:C C60
+U 1 1 5C98BCBA
+P 4700 3350
+F 0 "C60" H 4815 3396 50  0000 L CNN
+F 1 "0.1uf" H 4815 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 3200 50  0001 C CNN
+F 3 "~" H 4700 3350 50  0001 C CNN
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C61
+U 1 1 5C98BE53
+P 5250 3350
+F 0 "C61" H 5365 3396 50  0000 L CNN
+F 1 "0.1uf" H 5365 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5288 3200 50  0001 C CNN
+F 3 "~" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3500 4700 3550
+Wire Wire Line
+	4700 3200 4700 3150
+$Comp
+L power:GND #PWR09
+U 1 1 5C98C353
+P 4700 3650
+F 0 "#PWR09" H 4700 3400 50  0001 C CNN
+F 1 "GND" H 4705 3477 50  0000 C CNN
+F 2 "" H 4700 3650 50  0001 C CNN
+F 3 "" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3150 5250 3150
+Wire Wire Line
+	5250 3150 5250 3200
+Connection ~ 4700 3150
+Wire Wire Line
+	4700 3150 4700 3050
+Wire Wire Line
+	4700 3550 5250 3550
+Wire Wire Line
+	5250 3550 5250 3500
+Connection ~ 4700 3550
+Wire Wire Line
+	4700 3550 4700 3650
+$Comp
+L Device:C C59
+U 1 1 5C98C917
+P 4350 3050
+F 0 "C59" H 4465 3096 50  0000 L CNN
+F 1 "0.1uf" H 4465 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 2900 50  0001 C CNN
+F 3 "~" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5150 4300 5250
+Wire Wire Line
+	4300 5250 3650 5250
+Connection ~ 3650 5250
+Wire Wire Line
+	3650 5250 3650 5350
+Wire Wire Line
+	4300 4850 4300 4650
+Connection ~ 4300 4650
+Wire Wire Line
+	4300 4650 4450 4650
+Wire Wire Line
+	4350 2650 4350 2900
+Connection ~ 4350 2650
+Wire Wire Line
+	4350 2650 4600 2650
+Wire Wire Line
+	4350 3200 4350 3450
+Wire Wire Line
+	4350 3450 3700 3450
+Connection ~ 3700 3450
+Wire Wire Line
+	3700 3450 3700 3550
+$Comp
+L Device:C C62
+U 1 1 5C98E67F
+P 4300 5000
+F 0 "C62" H 4415 5046 50  0000 L CNN
+F 1 "0.1uf" H 4415 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 4850 50  0001 C CNN
+F 3 "~" H 4300 5000 50  0001 C CNN
+	1    4300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5C1C1B98
+P 3700 2200
+F 0 "#PWR0112" H 3700 2050 50  0001 C CNN
+F 1 "+3.3V" H 3715 2373 50  0000 C CNN
+F 2 "" H 3700 2200 50  0001 C CNN
+F 3 "" H 3700 2200 50  0001 C CNN
+	1    3700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5C1C1BD8
+P 3650 4100
+F 0 "#PWR0113" H 3650 3950 50  0001 C CNN
+F 1 "+3.3V" H 3665 4273 50  0000 C CNN
+F 2 "" H 3650 4100 50  0001 C CNN
+F 3 "" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0122
+U 1 1 5C6E72B6
+P 4700 3050
+F 0 "#PWR0122" H 4700 2900 50  0001 C CNN
+F 1 "+3.3V" H 4715 3223 50  0000 C CNN
+F 2 "" H 4700 3050 50  0001 C CNN
+F 3 "" H 4700 3050 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2550 3300 2550
+Wire Wire Line
+	2750 2600 3300 2600
+Wire Wire Line
+	2750 2750 3300 2750
+Wire Wire Line
+	2750 2900 3300 2900
+Wire Wire Line
+	3650 4100 3650 4250
+$EndSCHEMATC

@@ -1,0 +1,6 @@
+Plot file “C:\Users\gyea1\OneDrive\Documents\kicad\SprinklerControler1\FirstGerber\SprinklerController1-F.Cu.gbr” created.
+Plot file “C:\Users\gyea1\OneDrive\Documents\kicad\SprinklerControler1\FirstGerber\SprinklerController1-B.Cu.gbr” created.
+Plot file “C:\Users\gyea1\OneDrive\Documents\kicad\SprinklerControler1\FirstGerber\SprinklerController1-F.Paste.gbr” created.
+Plot file “C:\Users\gyea1\OneDrive\Documents\kicad\SprinklerControler1\FirstGerber\SprinklerController1-F.SilkS.gbr” created.
+Plot file “C:\Users\gyea1\OneDrive\Documents\kicad\SprinklerControler1\FirstGerber\SprinklerController1-F.Mask.gbr” created.
+Plot file “C:\Users\gyea1\OneDrive\Documents\kicad\SprinklerControler1\FirstGerber\SprinklerController1-Edge.Cuts.gbr” created.

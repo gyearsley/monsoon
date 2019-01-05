@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay_SolidState:MOC3010M U1
+U 1 1 5BF97E2A
+P 5800 3600
+F 0 "U1" H 5800 3925 50  0000 C CNN
+F 1 "MOC3010M" H 5800 3834 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5600 3400 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf" H 5775 3600 50  0001 L CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_TRIAC_A1GA2 D1
+U 1 1 5BF97EE3
+P 8100 3950
+F 0 "D1" H 8229 3996 50  0000 L CNN
+F 1 "Q_TRIAC_A1GA2" H 8229 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" V 8175 3975 50  0001 C CNN
+F 3 "~" V 8100 3950 50  0001 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BF97F8A
+P 6550 3500
+F 0 "R2" V 6343 3500 50  0000 C CNN
+F 1 "180" V 6434 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6480 3500 50  0001 C CNN
+F 3 "~" H 6550 3500 50  0001 C CNN
+	1    6550 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BF9804C
+P 6950 3750
+F 0 "C1" H 7065 3796 50  0000 L CNN
+F 1 "0.1uf" H 7065 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 3600 50  0001 C CNN
+F 3 "~" H 6950 3750 50  0001 C CNN
+	1    6950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BF9811F
+P 5050 3500
+F 0 "R1" V 4843 3500 50  0000 C CNN
+F 1 "500" V 4934 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 3500 50  0001 C CNN
+F 3 "~" H 5050 3500 50  0001 C CNN
+	1    5050 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BF98143
+P 7350 3500
+F 0 "R3" V 7143 3500 50  0000 C CNN
+F 1 "2.4K" V 7234 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7280 3500 50  0001 C CNN
+F 3 "~" H 7350 3500 50  0001 C CNN
+	1    7350 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3500 6400 3500
+Wire Wire Line
+	6700 3500 6950 3500
+Wire Wire Line
+	7500 3500 8100 3500
+Wire Wire Line
+	8100 3500 8100 3800
+Wire Wire Line
+	8100 3500 8100 3200
+Wire Wire Line
+	8100 3200 8800 3200
+Connection ~ 8100 3500
+Wire Wire Line
+	8100 4100 8100 4400
+Wire Wire Line
+	8100 4400 8800 4400
+Wire Wire Line
+	6950 3600 6950 3500
+Connection ~ 6950 3500
+Wire Wire Line
+	6950 3500 7200 3500
+Wire Wire Line
+	6950 3900 6950 4400
+Wire Wire Line
+	6950 4400 8100 4400
+Connection ~ 8100 4400
+Wire Wire Line
+	6100 3700 6350 3700
+Wire Wire Line
+	6350 3700 6350 4050
+Wire Wire Line
+	6350 4050 7950 4050
+Wire Wire Line
+	5200 3500 5500 3500
+Wire Wire Line
+	5500 3700 4800 3700
+Wire Wire Line
+	4900 3500 4800 3500
+Text HLabel 4800 3700 0    50   Input ~ 0
+EN
+Text HLabel 4800 3500 0    50   Input ~ 0
+PU
+Text HLabel 8800 3200 2    50   BiDi ~ 0
+AC0
+Text HLabel 8800 4400 2    50   BiDi ~ 0
+AC1
+$EndSCHEMATC
